@@ -1,5 +1,12 @@
+p {
+    text-align: justify;
+}
+
+/* HEADER */
 header{
     background-color: #F1F3FF;
+    border-width: 3px;
+    border-color: black;
 }
 
 nav {
@@ -40,6 +47,7 @@ li {
 }
 
 .banner{
+    background-color: #F1F3FF;
     display:flex;
     justify-content: space-between;
 }
@@ -47,43 +55,22 @@ li {
 .banner-img{
     box-sizing: border-box;
     margin-top: 53px;
-    margin-right: 0px;
-    width: 704px;
-    height: 407px;
+    max-width: 50%;
+}
+.banner-img >img{
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .banner-text{
+    max-width: 40%;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start;
-    justify-content: center;
-    box-sizing: border-box; */
     padding-left: 136px;
 }
 
-.banner-text > h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    box-sizing: border-box;
-    width: 568px;
-    height: 108px;
-    margin-top: 118px;
-}
-
-.banner-text > p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 20px;
-    width: 468px;
-    height: 60px;
-    box-sizing: border-box;
-    margin-top: 0px;
-}
-
 .banner-text > button{
-    width: 140px;
+    width: 160px;
     height: 36px;
     box-sizing: border-box;
     padding: 8px 12px;
@@ -96,18 +83,147 @@ li {
     color: #FFFFFF;
 }
 
-.section-satu{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 140px;
+.banner-text > h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    box-sizing: border-box;
+    width: 568px;
+    height: 108px;
+    padding-top: 5%;
 }
 
-.section-satu >img{
+.banner-text > p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    width: 468px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+/* SECTION 1 */
+.section-satu{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 550px;
+    padding: 0px;
+}
+
+.section-satu-img{
+    box-sizing: border-box;
     padding-top: 104px;
-    padding-left: 206px;
+    padding-left: 10%;
+    width: 50%;
+    height: 428px;
 }
 
 .section-satu-txt{
-    padding-left: 86px;
-    padding-right: 207px;
+    width: 50%;
+    box-sizing: border-box;
+    padding-top: 136px;
+    padding-right: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.section-satu-txt > h2{
+    line-height: 36px;
+    font-size: 24px;
+}
+
+.section-satu-txt > p, li{
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.checklist{
+    box-sizing: border-box;
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    padding: 4px 6px;
+    border-radius: 50%;
+    background-color: #CFD4ED;
+    margin-right: 10px;
+    line-height: 30px;
+    color:#0D28A6;
+
+}
+
+.section-satu-txt-points{
+    padding-left: 0%;
+    line-height: 20px;
+}
+
+.section-satu-txt-points > span{
+    padding: 20px;
+}
+
+/*SECTION 2*/
+.section-dua{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-dua-title{
+    padding: 0px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+.section-dua-title > h2{
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.section-dua-title > p{
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+
+.section-dua-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    padding: 0px 100px;
+}
+
+.section-dua-card > p{
+    font-size: 14px;
+    line-height: 15px;
+    width: 220px;
+    height: 60px;
+}
+
+.section-dua-card > h3{
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 18%;
+    height: 180px;
+    padding: 20px 30px;
+    border-width: 2px;
+    border-color: rgb(196, 193, 193);
+    border-style: solid;
+    border-radius: 5%;
 }
